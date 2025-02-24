@@ -4,7 +4,72 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Result Summary</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="overall">
+          <h4 class="overall-title">Your Result</h4>
+          <div class="final-score">
+            <h2 class="total-score">76</h2>
+            <h3 class="out-of">of 100</h3>
+          </div>
+          <h4 class="remark">Great</h4>
+          <p class="review">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+
+        <div class="breakdown">
+          <h4 class="breakdown-title">Summary</h4>
+          <ul class="components">
+            <li>
+              <div class="category">
+                <img src="images/icon-reaction.svg" alt="Reaction SVG" />
+                <h5 class="reaction-title">Reaction</h5>
+              </div>
+              <h4 class="score">
+                80 <span class="out-of-breakdown"> / 100</span>
+              </h4>
+            </li>
+            <li>
+              <div class="category">
+                <img src="images/icon-memory.svg" alt="Memory SVG" />
+                <h5 class="memory-title">Memory</h5>
+              </div>
+              <h4 class="score">
+                92 <span class="out-of-breakdown"> / 100</span>
+              </h4>
+            </li>
+            <li>
+              <div class="category">
+                <img src="images/icon-verbal.svg" alt="Verbal SVG" />
+                <h5 class="verbal-title">Verbal</h5>
+              </div>
+              <h4 class="score">
+                61 <span class="out-of-breakdown"> / 100</span>
+              </h4>
+            </li>
+            <li>
+              <div class="category">
+                <img src="images/icon-visual.svg" alt="Visual SVG" />
+                <h5 class="visual-title">Visual</h5>
+              </div>
+              <h4 class="score">
+                73 <span class="out-of-breakdown"> / 100</span>
+              </h4>
+            </li>
+          </ul>
+          <button class="cta-button">Continue</button>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
