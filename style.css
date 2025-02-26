@@ -22,23 +22,7 @@ main {
 }
 
 .result-summary {
-    border: 1px solid black;
     max-width: 46rem;
-}
-
-@media (min-width:48rem) {
-    .result-summary {
-        display: flex;
-        
-    }
-
-    .result {
-        border-radius: 0 0 0 0;
-    }
-
-    .summary {
-        width: 50%;
-    }
 }
 
 .result {
@@ -181,5 +165,20 @@ button:hover {
     background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
 }
 
+@media (min-width:48rem) {
+    .result-summary {
+        display: flex;
+
+    }
+
+    .result {
+        max-width: 50%;
+        border-radius: 2rem 2rem 2rem 2rem;
+    }
+
+    .summary {
+        flex-grow: 1;
+    }
+}
 
 
